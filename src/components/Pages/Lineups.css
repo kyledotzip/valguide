@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+.lineups-banner {
+    display: flex;
+    height: 8rem;
+    position: relative;
+    background-image: url(/src/assets/homebanner.jfif);
+    background-size: cover;
+}
+
+.lineups-banner h1 {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    z-index: 1;
+    color: #ffff;
+    position: absolute;
+    margin: 0;
+    left: 15%;
+}
