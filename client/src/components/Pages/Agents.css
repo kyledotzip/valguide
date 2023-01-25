@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+.agents-banner {
+    display: flex;
+    height: 8rem;
+    position: relative;
+    background-image: url(/src/assets/homebanner.jfif);
+    background-size: cover;
+}
+
+.agents-banner h1 {
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    z-index: 1;
+    color: #ffff;
+    position: absolute;
+    margin: 0;
+    left: 15%;
+}
+
+.agents-content {
+    display: grid;
+    grid-auto-flow: row;
+    position: absolute;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+    height: calc(100vh - 313px);
+}
+
+.agents-filter {
+    color: #ffff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.agents-info {
+    color: #ffff;
+    width: 100%;
+    margin: 0px;
+    background-color: #0a0e13;
+}
+
+.filter-text-box {
+    height: 80px;
+    background-color: #0a0e13;
+    border-right: 1px solid #122b2e;
+    border-top: 1px solid #122b2e;
+    border-bottom: 1px solid #122b2e;
+}
+
+.filter-text {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    position: relative;
+    align-content: flex-start;
+    height: calc(100vh - 313px);
+    scrollbar-width: none;
+}
+
+.filter-content > * {
+    color: white;
+    background-color: #273237;
+    border-color: #122b2e;
+    padding: 6px 24px 6px 14px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    transition: background-color 0.8s ease-out -0.4s;
+    cursor: pointer;
+}
+
+.agents-main {
+    display: flex;
+    position: relative;
+}
+
+.agent-display {
+    display: grid;
+    height: 100%;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.agent-image {
+    color: white;
+    place-self: center;
+}
+
+.agent-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.agent-info > * {
+    font-family: 'Oswald', sans-serif;
+    font-size: 150%;
+    width: 100%;
+    height: 25%;
+    color: white;
+    text-align: center;
+}
+
+.agent-ability-1 {
+    display: grid;
+    grid-template-columns: 4fr 148.75px;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
+.a-pic-1 {
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10%;
+}
+
+.agent-ability-2 {
+    display: grid;
+    grid-template-columns: 148.75px 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.a-pic-2 {
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10%;
+}
+
+.agent-ability-3 {
+    display: grid;
+    grid-template-columns: 4fr 148.75px;
+    grid-template-rows: 1fr 4fr;
+}
+
+.a-pic-3 {
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10%;
+}
+
+.a-pic-3 image {
+    width: 100%;
+    height: 100%;
+}
+
+.agent-ability-ult {
+    display: grid;
+    grid-template-columns: 148.75px 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.a-pic-ult {
+    grid-row: span 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10%;
+}
+
+.agent-image img {
+    height: 100%;
+    width: 100%;
+}
+
+
+.brimstone-button:hover {
+    background-color: red;
+}
+
+.phoenix-button:hover {
+    background-color: orange;
+}
+
+.sage-button:hover {
+    background-color: aquamarine;
+}
+
+.sova-button:hover {
+    background-color: aqua;
+}
+
+.viper-button:hover {
+    background-color: darkgreen;
+}
+
+.cypher-button:hover {
+    background-color: gainsboro;
+}
+
+.reyna-button:hover {
+    background-color: blueviolet;
+}
+
+.killjoy-button:hover {
+    background-color: lightgreen;
+}
+
+.breach-button:hover {
+    background-color: khaki;
+}
+
+.omen-button:hover {
+    background-color: #0f1a1a;
+}
+
+.jett-button:hover {
+    background-color: darkgray;
+}
+
+.raze-button:hover {
+    background-color: burlywood;
+}
+
+.skye-button:hover {
+    background-color: darkolivegreen;
+}
+
+.yoru-button:hover {
+    background-color: darkblue;
+}
+
+.astra-button:hover {
+    background-color: darkmagenta;
+}
+
+.kayo-button:hover {
+    background-color: darkturquoise;
+}
+
+.chamber-button:hover {
+    background-color: goldenrod;
+}
+
+.neon-button:hover {
+    background-color: powderblue;
+}
+
+.fade-button:hover {
+    background-color: #222121;
+}
+
+.harbor-button:hover {
+    background-color: aqua;
+}

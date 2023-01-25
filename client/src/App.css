@@ -1,0 +1,17 @@
+@import url(//db.onlinewebfonts.com/c/b621d1ffb46493164fd62fb7a83ab0ff?family=MarkW05-Medium);
+
+:root {
+  --font-family: 'MarkW05-Medium', sans-serif;
+  --color-bg: #010101;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg);
+}
+
+a:link, :visited, :active {
+  text-decoration: none;
+  color: unset;
+}
