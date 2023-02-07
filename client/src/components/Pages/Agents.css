@@ -28,18 +28,18 @@
     height: calc(100vh - 313px);
 }
 
-.agents-filter {
-    color: #ffff;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-}
-
 .agents-info {
     color: #ffff;
     width: 100%;
     margin: 0px;
     background-color: #0a0e13;
+}
+
+.agents-filter {
+    color: #ffff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
 .filter-text-box {

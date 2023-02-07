@@ -18,3 +18,64 @@
     margin: 0;
     left: 15%;
 }
+
+.agents-filter {
+    color: #ffff;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.filter-text-box {
+    height: 80px;
+    background-color: #0a0e13;
+    border-right: 1px solid #122b2e;
+    border-top: 1px solid #122b2e;
+    border-bottom: 1px solid #122b2e;
+}
+
+.filter-text {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    width: 90%;
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    position: relative;
+    align-content: flex-start;
+    height: calc(100vh - 313px);
+    scrollbar-width: none;
+}
+
+.filter-content > * {
+    color: white;
+    background-color: #273237;
+    border-color: #122b2e;
+    padding: 6px 24px 6px 14px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    transition: background-color 0.8s ease-out -0.4s;
+    cursor: pointer;
+}
+
+.lineups-content {
+    display: grid;
+    grid-auto-flow: row;
+    position: absolute;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+    height: calc(100vh - 313px);
+}
+
+.lineups-main {
+    display: flex;
+    position: relative;
+}
