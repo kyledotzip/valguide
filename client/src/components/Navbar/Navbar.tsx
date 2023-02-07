@@ -4,6 +4,7 @@ import './Navbar.css';
 import logo from '../../assets/valorant.png'
 
 const Navbar = ({ uploadPopup }) => {
+
     const location = useLocation();
     
     return (
@@ -18,7 +19,7 @@ const Navbar = ({ uploadPopup }) => {
                     <p className=".val__navbar-lineups"><Link to = "lineups">LINEUPS</Link></p>
                     <p className=".val__navbar-info"><Link to = "info">INFO</Link></p>
                     {location.pathname === '/lineups' &&                   
-                        <button className=".val__navbar--upload" onClick={uploadPopup}>UPLOAD</button>
+                        <button className="val__navbar-upload" onClick={uploadPopup}>UPLOAD</button>
                     }
                 </div>
             </div>
