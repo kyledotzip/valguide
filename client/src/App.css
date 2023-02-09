@@ -11,6 +11,10 @@ body {
   background-color: var(--color-bg);
 }
 
+body ::-webkit-scrollbar {
+  display: none;
+}
+
 a:link, :visited, :active {
   text-decoration: none;
   color: unset;

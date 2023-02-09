@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import cors from "cors";
 
 import { config } from 'dotenv';
 config();
@@ -20,13 +21,19 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}));
 const CONNECTION_URL = process.env.MONGO_URL;
 const PORT = process.env.PORT || 5000;
 
+app.use(
+    cors({
+        origin: "*",
+    })
+);
+
 app.post("/tips", async (req, res) => {
     const newTip = new Tip({
-        title: "test",
-        description: "test",
-        creator: "test",
-        tags: ["test"],
-        URL: "test",
+        title: req.body.title,
+        description: req.body.description,
+        creator: req.body.creator,
+        tag: req.body.tag,
+        url: req.body.url,
     });
     const CreatedTip = await newTip.save();
     res.json(CreatedTip)

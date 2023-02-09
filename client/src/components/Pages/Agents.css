@@ -60,7 +60,7 @@
 .filter-content {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
+    overflow-y: scroll;
     overscroll-behavior: contain;
     position: relative;
     align-content: flex-start;
@@ -68,10 +68,15 @@
     scrollbar-width: none;
 }
 
+.filter-content ::-webkit-scrollbar {
+    width: 0 !important;
+}
+
 .filter-content > * {
     color: white;
     background-color: #273237;
     border-color: #122b2e;
+    border-style: solid;
     padding: 6px 24px 6px 14px;
     font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
