@@ -72,26 +72,26 @@ const Upload = (props) => {
                             setTag(e.target.value)
                         }}
                     >
-                        <option value="astra">Astra</option>
-                        <option value="breach">Breach</option>
-                        <option value="brimstone">Brimstone</option>
-                        <option value="chamber">Chamber</option>
-                        <option value="cypher">Cypher</option>
-                        <option value="fade">Fade</option>
-                        <option value="harbor">Harboro</option>
-                        <option value="jett">Jett</option>
-                        <option value="kayo">KAY/O</option>
-                        <option value="killjoy">Killjoy</option>
-                        <option value="neon">Neon</option>
-                        <option value="omen">Omen</option>
-                        <option value="phoenix">Phoenix</option>
-                        <option value="raze">Raze</option>
-                        <option value="reyna">Reyna</option>
-                        <option value="sage">Sage</option>
-                        <option value="skye">Skye</option>
-                        <option value="sova">Sova</option>
-                        <option value="viper">Viper</option>
-                        <option value="yoru">Yoru</option>
+                        <option value="Astra">Astra</option>
+                        <option value="Breach">Breach</option>
+                        <option value="Brimstone">Brimstone</option>
+                        <option value="Chamber">Chamber</option>
+                        <option value="Cypher">Cypher</option>
+                        <option value="Fade">Fade</option>
+                        <option value="Harbor">Harbor</option>
+                        <option value="Jett">Jett</option>
+                        <option value="Kayo">KAY/O</option>
+                        <option value="Killjoy">Killjoy</option>
+                        <option value="Neon">Neon</option>
+                        <option value="Omen">Omen</option>
+                        <option value="Phoenix">Phoenix</option>
+                        <option value="Raze">Raze</option>
+                        <option value="Reyna">Reyna</option>
+                        <option value="Sage">Sage</option>
+                        <option value="Skye">Skye</option>
+                        <option value="Sova">Sova</option>
+                        <option value="Viper">Viper</option>
+                        <option value="Yoru">Yoru</option>
                     </select>
                     <input
                         id="url"

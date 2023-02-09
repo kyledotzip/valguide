@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import './Lineups.css';
+import Card from '../Misc/Card.tsx';
 
 const Lineups = () => {
 
-
+    const [cards, setCardData] = useState([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await axios.get("http://localhost:5000/tips");
+            setCardData(response.data);
+        }
+        fetchData();
+    }, []);
 
     return (
         <div className="lineups-page">
@@ -79,7 +88,18 @@ const Lineups = () => {
                         }}>harbor</button>
                     </div>
                 </div>
-                <div className="lineups-main">                  
+                <div className="lineups-main">
+                    {cards.map((card) => (
+                        <Card 
+                            className="lineups-cards"
+                            key={card.id}
+                            title={card.title}
+                            description={card.description}
+                            url={card.url}
+                            creator={card.creator}
+                            tag={card.tag}
+                        />
+                    ))}
                 </div>
             </div>
         </div>

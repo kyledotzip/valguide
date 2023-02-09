@@ -39,6 +39,12 @@ app.post("/tips", async (req, res) => {
     res.json(CreatedTip)
 } )
 
+app.get('/tips', async (req, res) => {
+    const tips = await Tip.find();
+
+    res.json(tips);
+})
+
 
 mongoose.set('strictQuery', true);
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
