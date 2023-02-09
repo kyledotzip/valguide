@@ -18,3 +18,17 @@
     margin: 0;
     left: 15%;
 }
+
+.info-content {
+
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.info-content h1 {
+
+    text-align: center;
+
+}

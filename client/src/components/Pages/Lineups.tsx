@@ -3,11 +3,15 @@ import axios from "axios";
 
 import './Lineups.css';
 import Card from '../Misc/Card.tsx';
+import next from '../../assets/next.png';
+import last from '../../assets/last.png';
 
 const Lineups = () => {
 
     const [cards, setCardData] = useState([]);
     const [agent, setAgent] = useState("");
+    const [cardsPerPage, setPostsPerPage] = useState(11);
+    const [page, setPage] = useState(1);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -16,6 +20,21 @@ const Lineups = () => {
         }
         fetchData();
     }, []);
+
+    const pageHandler = (newPage) => {
+        if (newPage >= 1) {
+            setPage(newPage);
+        }
+    } 
+
+    const filteredCards = cards.filter(card => card.tag === agent || agent === "")
+
+    const lastPostIndex = page * cardsPerPage;
+    const firstPostIndex = lastPostIndex - cardsPerPage;
+    const currentCards = filteredCards.slice(firstPostIndex, lastPostIndex);
+    console.log(firstPostIndex);
+    console.log(lastPostIndex);
+    console.log(filteredCards);
 
     return (
         <div className="lineups-page">
@@ -28,7 +47,10 @@ const Lineups = () => {
                         <div className="filter-text">FILTER</div>
                     </div>
                     <div className="filter-content">
-                    <button className="brimstone-button" onClick={ () => {
+                        <button className="all-button" onClick={ () => {
+                            setAgent("");
+                        }}>select all</button>
+                        <button className="brimstone-button" onClick={ () => {
                             setAgent("Brimstone");
                         }}>brimstone</button>
                         <button className="phoenix-button" onClick={ () => {
@@ -91,7 +113,7 @@ const Lineups = () => {
                     </div>
                 </div>
                 <div className="lineups-main">
-                    {cards.map((card) => (
+                    {currentCards.map((card) => (
                         <Card 
                             className="lineups-cards"
                             key={card.id}
@@ -102,6 +124,11 @@ const Lineups = () => {
                             tag={card.tag}
                         />
                     ))}
+                    <div className="lineups-pages">
+                        <button className="lineups-pages-btn-prev" onClick={ () => {pageHandler(page-1)}}>&lt;</button>
+                        <p className="lineups-page-number">{page}</p>
+                        <button className="lineups-pages-btn-next" onClick={ () => {pageHandler(page+1)}}>&gt;</button>
+                    </div>
                 </div>
             </div>
         </div>

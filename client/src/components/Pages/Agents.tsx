@@ -3,6 +3,7 @@ import { useState } from "react";
 import axios from "axios";
 
 import './Agents.css';
+import loading from '../../assets/Hourglass_icon.png';
 
 /*
 let AgentData = {
@@ -18,7 +19,7 @@ let AgentData = {
 const Agents = () => {
     
     const [agent, setState] = useState({
-        agentPortrait: '',
+        agentPortrait: `${loading}`,
         agentAbility1: '',
         agentAbility1Name: '',
         agentAbility1Icon: '',
@@ -31,7 +32,7 @@ const Agents = () => {
         agentAbilityUlt: '',
         agentAbilityUltName: '',
         agentAbilityUltIcon: '',
-        agentBackground: ''
+        agentBackground: '',
     });
     
     

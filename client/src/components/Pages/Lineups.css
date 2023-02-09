@@ -81,14 +81,74 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     position: relative;
+    background-color: #0a0e13;
 }
 
 .card {
-
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
     outline: 1px solid white;
+    border-radius: 30px;
     color: white;
     height: 100%;
     width: 100%;
     
+}
 
+
+.card a:visited, a:link {
+
+    color: maroon;
+
+}
+
+.card header {
+
+    text-align: center;
+
+}
+
+.lineups-pages {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-end: 5;
+    grid-row-end: 4;
+    background: transparent;
+}
+
+.lineups-pages-btn-prev {
+
+    color: white;
+    font-size: 100%;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-style: none;
+
+}
+
+.lineups-pages-btn-next {
+
+    color: white;
+    font-size: 100%;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    border-style: none;
+
+}
+
+
+.lineups-page-number {
+    color: white;
+    font-size: 30px;
+    padding: 2rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #0a0e13;
 }

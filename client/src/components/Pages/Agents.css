@@ -263,3 +263,7 @@
 .harbor-button:hover {
     background-color: aqua;
 }
+
+.all-button:hover {
+    background-color: grey;
+}

@@ -3,11 +3,14 @@ import React from 'react'
 const Card = (props) => {
   return (
     <div className='card'>
+      <div className='card-content'>
         <h2>{props.title}</h2>
+        <p>Link: 
+          <a href={props.url}> {props.url}</a>
+        </p>
         <p>{props.description}</p>
-        <p>{props.url}</p>
-        <p>{props.creator}</p>
-        <footer>{props.tag}</footer>
+        <p>Creator: {props.creator}</p>
+        <footer>Agent: {props.tag}</footer></div>        
     </div>
   )
 }
