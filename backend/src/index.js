@@ -45,7 +45,7 @@ app.get('/tips', async (req, res) => {
     res.json(tips);
 })
 
-app.get('/', async (req, res) => {
+app.get('/', (req, res) => {
     res.send("Hello");
 });
 
