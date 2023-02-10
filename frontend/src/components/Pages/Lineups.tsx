@@ -3,8 +3,6 @@ import axios from "axios";
 
 import './Lineups.css';
 import Card from '../Misc/Card.tsx';
-import next from '../../assets/next.png';
-import last from '../../assets/last.png';
 
 const Lineups = () => {
 
@@ -15,7 +13,7 @@ const Lineups = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get("http://localhost:5000/tips");
+            const response = await axios.get("http://172.22.0.1:5000/tips");
             setCardData(response.data);
         }
         fetchData();
@@ -32,9 +30,6 @@ const Lineups = () => {
     const lastPostIndex = page * cardsPerPage;
     const firstPostIndex = lastPostIndex - cardsPerPage;
     const currentCards = filteredCards.slice(firstPostIndex, lastPostIndex);
-    console.log(firstPostIndex);
-    console.log(lastPostIndex);
-    console.log(filteredCards);
 
     return (
         <div className="lineups-page">

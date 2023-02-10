@@ -16,7 +16,7 @@ const Upload = (props) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:5000/tips", {
+            const response = await axios.post("172.22.0.2:5000/tips", {
                 title,
                 description,
                 creator,
