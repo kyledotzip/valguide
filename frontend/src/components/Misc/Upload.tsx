@@ -16,7 +16,7 @@ const Upload = (props) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("172.22.0.2:5000/tips", {
+            const response = await axios.post("https://val-guide-new.herokuapp.com/tips", {
                 title,
                 description,
                 creator,

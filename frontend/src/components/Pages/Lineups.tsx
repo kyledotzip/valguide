@@ -13,7 +13,7 @@ const Lineups = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get("http://172.22.0.1:5000/tips");
+            const response = await axios.get("https://val-guide-new.herokuapp.com/tips");
             setCardData(response.data);
         }
         fetchData();
