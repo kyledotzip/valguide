@@ -37,13 +37,17 @@ app.post("/tips", async (req, res) => {
     });
     const CreatedTip = await newTip.save();
     res.json(CreatedTip)
-} )
+} );
 
 app.get('/tips', async (req, res) => {
     const tips = await Tip.find();
 
     res.json(tips);
 })
+
+app.get('/', async (req, res) => {
+    res.send("Hello");
+});
 
 
 mongoose.set('strictQuery', true);
